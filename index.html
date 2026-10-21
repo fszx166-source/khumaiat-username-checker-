@@ -54,7 +54,7 @@ const nums="0123456789";
 function randomChar(s){return s[Math.floor(Math.random()*s.length)]}
 function makeUsername(type){
  let out="";
- const len= Math.random()<0.5?4:3:2;
+const len = Number(document.getElementById("length").value);
  for(let i=0;i<len;i++){
    let pool=chars;
    if(type==="mixed") pool=chars+nums;
