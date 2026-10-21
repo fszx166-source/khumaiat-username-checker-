@@ -35,7 +35,15 @@ button:disabled{opacity:.5}
 <option value="letters">حروف فقط</option>
 <option value="digits">حروف مع أرقام ونقطة</option>
 </select>
-<button id="generate">توليد يوزرات</button>
+
+<label for="length">طول اليوزر</label>
+<select id="length">
+  <option value="2">ثنائي (حرفين/رقمين)</option>
+  <option value="3" selected>ثلاثي</option>
+  <option value="4">رباعي</option>
+  <option value="5">خماسي</option>
+</select>
+<button id="generate">توليد اليوزرات</button>
 <textarea id="results" rows="10" placeholder="اليوزرات بتظهر هنا..." readonly></textarea>
 <button id="copy">نسخ اليوزرات</button>
 <p class="small">تنبيه: التوليد لا يعني أن اليوزر متاح. يلزم ربط الواجهة بفاحص يعمل من الخادم للتحقق من التوفر.</p>
